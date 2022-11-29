@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaRa Player</title>
+    <script src="data/data.js" id="playlistsrc" type="text/javascript" async></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/autobg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body class="autocolor">
+
+    <nav id="navbar"></nav>
+    <section class="home-section">
+        <!-- homeposter -->
+        <div class="homeposter">
+            <img src="assets/images/poster1.jpeg" class="active" alt="">
+            <img src="assets/images/musiccover.jpeg" class="" alt="">
+        </div>
+    </section>
+    <h1 class="headingtop">SONGS FOR YOU</h1>
+    <ul id="ullisthome" class="playlists-group">
+        <!-- N num of muscis songs coming on js file -->
+    </ul>
+    <h1 class="heading">Play Lists</h1>
+    <ul id="ulplaylists" class="playlists-group">
+        <!--  Playlists coming on js file -->
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/arrahman.jpeg" class="playlist-card-img " id="rahman"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/arrahman.js')">
+            <p class="playlist-card-name">A.R. Rahman</p>
+        </div>
+        
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/anirudh.jpeg" class="playlist-card-img" id="anirudh"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/anirudh.js')">
+            <p class="playlist-card-name">Anirudh Ravichander</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/hiphop.jpeg" class="playlist-card-img" id="hiphop"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/hiphop.js')">
+            <p class="playlist-card-name">Hiphop</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/yuvansankarraja.jpeg" class="playlist-card-img" id="yuvan"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/yuvan.js')">
+            <p class="playlist-card-name">Yuvan Shanker Raja</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/d.imman.jpeg" class="playlist-card-img" id="imman"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/imman.js')">
+            <p class="playlist-card-name">d. Imman</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/gvprakash.jpeg" class="playlist-card-img" id="prakash"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/prakash.js')">
+            <p class="playlist-card-name">G.V. Prakash</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/ilayaraaja.jpeg" class="playlist-card-img" id="ilaiyaraaja"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/ilaiyaraaja.js')">
+            <p class="playlist-card-name">Ilaiyaraaja</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/vivek-mervin.jpeg" class="playlist-card-img" id="vivek"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/vivek.js')">
+            <p class="playlist-card-name">Vivek-Mervin</p>
+        </div>
+
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/srinivas.jpeg" class="playlist-card-img" id="srinivas"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/srinivas.js')">
+            <p class="playlist-card-name">Srinivas</p>
+        </div>
+
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/dhanush.jpeg" class="playlist-card-img" id="dhanush"
+                alt="assets/images/musiccover.jpeg" onclick="  revalue1('data/dhanush.js')">
+            <p class="playlist-card-name">Dhanush</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/haris jayaraj.png" class="playlist-card-img" id="harris"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/harris.js')">
+            <p class="playlist-card-name">Harris Jayaraj</p>
+        </div>
+
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/sidsriram.jpg" class="playlist-card-img" id="sriram"
+                alt="assets/images/musiccover.jpeg" onclick=" revalue1('data/sriram.js')">
+            <p class="playlist-card-name">Sid Sriram</p>
+        </div>
+    </ul>
+
+    <h1 class="heading">Librarys</h1>
+    <ul id="ulplaylists" class="playlists-group">
+        <!--  Playlists coming on js file -->
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/arrahman.jpeg" class="playlist-card-img " id="rahman"
+                alt="assets/images/musiccover.jpeg" onclick="revalue1('data/melody.js') ">
+            <p class="playlist-card-name">Melody</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/anirudh.jpeg" class="playlist-card-img" id="anirudh"
+                alt="assets/images/musiccover.jpeg" onclick="revalue1('data/evergreen.js')">
+            <p class="playlist-card-name">Evergreen</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/hiphop.jpeg" class="playlist-card-img" id="hiphop"
+                alt="assets/images/musiccover.jpeg" onclick="revalue1('data/party.js')">
+            <p class="playlist-card-name">Party</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/yuvansankarraja.jpeg" class="playlist-card-img" id="yuvan"
+                alt="assets/images/musiccover.jpeg" onclick="revalue1('kuthu.js')">
+            <p class="playlist-card-name">Rocking Kuthu</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/d.imman.jpeg" class="playlist-card-img" id="imman" onclick="imman()"
+                alt="assets/images/musiccover.jpeg" onclick="revalue1('workout.js')">
+            <p class="playlist-card-name">Workout</p>
+        </div>
+        <div class="playlist-card">
+            <img src="assets/PlaylistCover/gvprakash.jpeg" class="playlist-card-img" id="prakash" onclick="prakash"
+                alt="assets/images/musiccover.jpeg" onclick="revalue1('album.js')">
+            <p class="playlist-card-name">Album</p>
+        </div>
+    </ul>
+    <h1 class="heading">MUSICS</h1>
+    <ul id="ul-musics" class="playlists-group">
+        <!--  songs coming on js file -->
+    </ul>
+    <h1 class="heading"></h1>
+    <div class="spacing">
+    </div>
+    <!-- player selection  -->
+    <section class="music-player-section">
+
+        <!-- back and playlist button -->
+        <img src="assets/images/nav.png" class="nav-btn icon hide" alt="">
+        <img src="assets/images/back.png" class="back-btn icon hide" alt="">
+        <!-- player selection song name,movie,cover -->
+        <h1 class="current-song-name">song 1</h1>
+        <p class="movie-name hide">movie 1</p>
+        <img src="" class="cover hide pause" alt="assets/images/musiccover.jpeg">
+        <!-- seek bar config -->
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" onclick="seekTo()" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <!-- All buttons controls -->
+        <!-- on secondary min js file -->
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active" onclick="songobj.next()"></i>
+                <i class="fas fa-play active" onclick="songobj.play()"></i>
+                <i class="fas fa-pause" onclick="songobj.pause()"></i>
+                <i class="fas fa-forward active" onclick="songobj.prev()"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+        </div>
+
+    </section>
+
+    <!-- active playlist  -->
+    <section class="playlist ">
+
+        <img src="assets/images/back.png" class="back-btn icon" alt="">
+
+        <h1 class="title">Song List</h1>
+        <ul id="ullist">
+            <!-- playlist songs coming on js file -->
+        </ul>
+        <br/>
+        <h6  style="color: chartreuse; text-align: center;">Current Song { <marquee class="current-song-Name" width='80px' move='5' ></marquee> }</h6>
+    </section>
+    <!-- Main audio -->
+    <audio preload="auto" src="" id="audio-source"></audio>
+    <!-- link js files -->
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+</html>
